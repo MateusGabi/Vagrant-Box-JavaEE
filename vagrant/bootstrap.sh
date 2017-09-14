@@ -18,6 +18,12 @@ su -c "sh $VAGRANT_PROVISION_SCRIPTS_DIR/locale.sh"
 # instalar pacotes utilitarios para auxiliar o desenvolvedor
 sh "$VAGRANT_PROVISION_SCRIPTS_DIR/utils.sh"
 
+# jre8
+sh "$VAGRANT_PROVISION_SCRIPTS_DIR/jre8.sh"
+
+# git
+sh "$VAGRANT_PROVISION_SCRIPTS_DIR/git.sh"
+
 # instalando postgresql
 sh "$VAGRANT_PROVISION_SCRIPTS_DIR/postgresql.sh"
 
